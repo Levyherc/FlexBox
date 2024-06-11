@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /*Usando o flexbox para que o container fique no meio da tela*/
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /*loga na esquerda e menu a direita*/
+    width: 900px;
+    
+    background-color: red;
+}
+
+.logo {
+    background-color: aqua;
+    display: flex; /*conteúdo dentro de logo será tratado como flax*/
+    align-items: center; /*alinhado logo ao centro*/
+
+}
+
+.menu {
+    background-color: azure;
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li {
+    list-style: none; /*Retira as marcações - pontos*/
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul {
+    display: flex;
+}
