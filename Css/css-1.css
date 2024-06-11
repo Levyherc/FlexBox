@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    /*Usando o flexbox para que o container fique no meio da tela*/
+    /* Usando o flexbox para que o container fique no meio da tela */
     display: flex;
     justify-content: center;
     height: 120px;
@@ -16,30 +16,27 @@ header {
 
 .container {
     display: flex;
-    justify-content: space-between; /*loga na esquerda e menu a direita*/
+    justify-content: space-between; /* Logo à esquerda e menu à direita */
     width: 900px;
-    
-    /*background-color: red; */
+    /* background-color: red; */
 }
 
 .logo {
-    /*background-color: aqua;*/
-    display: flex; /*conteúdo dentro de logo será tratado como flax*/
-    align-items: center; /*alinhado logo ao centro*/
-
+    /* background-color: aqua; */
+    display: flex; /* Conteúdo dentro de logo será tratado como flex */
+    align-items: center; /* Alinhado logo ao centro */
 }
 
 .menu {
-    /*background-color: azure;*/
+    /* background-color: azure; */
     display: flex;
     align-items: center;
 }
 
 nav ul, nav li {
-    list-style: none; /*Retira as marcações - pontos*/
+    list-style: none; /* Retira as marcações - pontos */
     margin: 0;
     padding: 0;
-
 }
 
 nav ul {
@@ -47,59 +44,60 @@ nav ul {
 }
 
 nav a {
-    display: block; /*Para que consiga alterar o conteúdo*/
+    display: block; /* Para que consiga alterar o conteúdo */
     padding: 15px;
-    text-decoration: none; /*para remover o sublinhado*/
-    text-transform: uppercase; /*todo menu ficara com letra maiúscula*/
+    text-decoration: none; /* Para remover o sublinhado */
+    text-transform: uppercase; /* Todo menu ficará com letra maiúscula */
     color: #727272;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*nav .active a para que o home fique azul*/
-/*adicionei nav a:hover para os demais mudar de cor */
+
+/* nav .active a para que o home fique azul */
+/* adicionei nav a:hover para os demais mudar de cor */
 nav .active a, nav a:hover {
     background-color: #39aae1;
     color: #FFFFFF;
 }
 
-/*Configurando banner na pagina*/
+/* Configurando banner na página */
 #banner {
     display: flex;
     justify-content: center;
-    background-image:url('../Imgens/img1.jpg'); /* usa-se o .. para sair da pasta Css ir para Imagens*/
+    background-image: url('../Imagens/img1.jpg'); /* Usa-se o .. para sair da pasta Css ir para Imagens */
     background-position: center;
     background-size: cover;
-    height: 670px; /*adicionado uma altura falsa para imagem aparecer*/
+    height: 670px; /* Adicionado uma altura falsa para imagem aparecer */
 }
 
 .column {
+    display: flex;
     flex-direction: column;
 }
 
 .banner_headline {
     flex: 1;
-    display: flex; /*Colando h1 e h2 lado a lado*/
-    flex-direction: column; /*h1 e h2 em coluna */
-    justify-content: center; /* h1 e h2 no meio do espaçamento disónpivel */
-    
+    display: flex; /* Colando h1 e h2 lado a lado */
+    flex-direction: column; /* h1 e h2 em coluna */
+    justify-content: center; /* h1 e h2 no meio do espaçamento disponível */
 }
 
 .banner_headline h1 {
     color: #FFFFFF;
     font-size: 70px;
-    text-shadow: 2px 2px 0px #000000; /*Adcionar contraste ao h1*/
+    text-shadow: 2px 2px 0px #000000; /* Adicionar contraste ao h1 */
     margin: 0;
     padding: 0;
-    max-width: 350px; /*celular*/
-    margin-top: 30px;
+    max-width: 350px; /* Celular */
 }
 
 .banner_headline h2 {
     color: #FFFFFF;
     font-size: 21px;
-    text-shadow: 0px 1px 0px #000000; /*Adcionar contraste ao h1*/
+    text-shadow: 0px 1px 0px #000000; /* Adicionar contraste ao h2 */
     margin: 0;
     padding: 0;
-    max-width: 350px; /*celular*/
+    max-width: 350px; /* Celular */
+    margin-top: 30px;
 }
 
 .banner_options {
@@ -112,32 +110,71 @@ nav .active a, nav a:hover {
 .banner3 {
     flex: 1;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adiciona espaçamento dentro dos banners */
+    padding: 20px; /* Adiciona espaçamento ao redor do conteúdo */
 }
 
 .banner1 {
     background-color: #39aae1;
 }
+
 .banner2 {
     background-color: #0079c7;
 }
+
 .banner3 {
     background-color: #2b4c99;
 }
+
 .banner-title {
     font-size: 21px;
+    margin-bottom: 10px; /* Adiciona um espaçamento entre o título e o texto */
 }
-.banner-desc {
+
+.banner_desc {
     font-size: 12px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.banner_options a{
+.banner_options a {
     display: inline-block;
     border: 1px solid #FFFFFF;
     padding: 5px;
     color: #FFFFFF;
     font-size: 13px;
     text-decoration: none;
-
 }
+
+#button {
+    width: 100px;
+    text-align: center;
+}
+
+/* Ajustando o espaçamento entre a data e o horário */
+.dates {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha o texto ao centro verticalmente */
+    
+    margin-bottom: 10px;
+}
+
+.date {
+    margin-right: 10px; /* Espaçamento entre "Monday-Friday" e "08:00-17:00" */
+}
+
+.date, .date1 {
+    font-size: 14px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.date1 {
+    font-style: italic;
+}
+
