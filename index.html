@@ -6,6 +6,18 @@
     <title>MediCenter</title>
     <!-- Vincular o CSS -->
     <link rel="stylesheet" href="Css/css-1.css">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menumobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }else{
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+
+    </script>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -19,6 +31,11 @@
                 <!-- Definir qualquer "menu de navegação" usa-se a "tag" "nav" -->
                 <nav>
                     <!-- Cria-se uma lista -->
+                    <div class="menumobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -187,7 +204,10 @@
                         <div class="widge_title_bar"></div>
                     </div>
                     <div class="widge_boby">
-                        ....
+                        <div class="informacao">
+                            Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title 
+                            Any Title Any Title Any Title Any.
+                        </div>
                     </div>
                 </div>
                 <div class="widge">
@@ -196,7 +216,10 @@
                         <div class="widge_title_bar"></div>
                     </div>
                     <div class="widge_boby">
-                        ....
+                        <div class="informacao">
+                            Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title 
+                            Any Title Any Title Any Title Any.
+                        </div>
                     </div>
                 </div>
             </aside>
@@ -207,18 +230,19 @@
         <div class="footer_menu">
             <div class="fm1">
                 <a href="">
-                    *****
+                    <h1>Health Insurance</h1>
+                    <p>Here in Medicenter we have individual</p>
                 </a>
             </div>
             <div class="fm2">
                 <a href="">
-                    *****
+                    <h1>Medical Records</h1>
+                    <p>Here in Medicenter we have individual</p>
                 </a>
             </div>
             <div class="fm3">
-                <a href="">
-                    *****
-                </a>
+                <h1>Health Insurance</h1>
+                <p>Here in Medicenter we have individual</p>
             </div>            
         </div>
         <div class="footer_area">
@@ -229,7 +253,19 @@
                         <div class="widge_title_bar"></div>
                     </div>
                     <div class="widge_boby">
-                        ....
+                        <div class="informacao">
+                            Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title 
+                            Any Title Any Title Any Title Any.
+                        </div>
+                        <div class="contato">
+                            <ul>
+                                <li>Address</li>
+                                <li>road</li>
+                                <li>neighborhood</li>
+                                <li>PO Box/City</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -240,7 +276,10 @@
                         <div class="widge_title_bar"></div>
                     </div>
                     <div class="widge_boby">
-                        ....
+                        <div class="informacao">
+                            Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title 
+                            Any Title Any Title Any Title Any.
+                        </div>
                     </div>
                 </div>                
             </div>   
@@ -251,7 +290,10 @@
                         <div class="widge_title_bar"></div>
                     </div>
                     <div class="widge_boby">
-                        ....
+                        <div class="informacao">
+                            Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title Any Title 
+                            Any Title Any Title Any Title Any.
+                        </div>
                     </div>
                 </div>
             </div>                     
